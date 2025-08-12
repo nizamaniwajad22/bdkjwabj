@@ -1260,10 +1260,10 @@
               color: white;
             "
           >
-            <option value="">Auto</option>
+            <option value="">Select Language</option>
             <option value="en">English</option>
-            <option value="es"></option>
-            <option value="fr"></option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
           </select>
         </div>
       </div>
@@ -1307,21 +1307,34 @@
       </div>
     </div>
 
-    
+    <!-- Professional Language Selection Modal -->
+    <div class="language-modal" id="languageModal">
+      <div class="">
+            <i class="fas fa-globe"></i>
+          </h2>
+          <button class="close-language-modal" id="closeLanguageModal">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="language-search-container">
+          <div class="search-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class=
+              id=
+              
+            />
           </div>
         </div>
 
-        <div class="">
-          <div class="">
-            <button class="" data-lang="english">
-              <div class="">
-                <i class=""></i>
+        <div class="></i>
               </div>
-              <div class="language-name">English</div>
+              <div class="auto">English</div>
               <div class="language-native">English</div>
             </button>
-            </div>
-            </button>
+            
           </div>
 
           <p
@@ -1598,7 +1611,16 @@
       document.addEventListener("DOMContentLoaded", function () {
         // Video files mapping
         const videoFiles = {
-          '': 'English_US_video_information_V1.mp4'
+          'english': 'English_US_video_information_V1.mp4',
+          'filipino': 'Filipino_Tagalog_video_information_V1.mp4',
+          'hindi': 'Hindi_video_information_V1.mp4',
+          'portuguese': 'Portuguese_Brazil_video_information_V1.mp4',
+          'spanish': 'Spanish_Spain_video_information_V1.mp4',
+          'tamil': 'Tamil_video_information_V1.mp4',
+          'arabic': 'Arabic_video_information_V1.mp4',
+          'french': 'French_France_video_information_V1.mp4',
+          'swedish': 'Swedish_video_information_V1.mp4',
+          'japanese': 'Japanese_video_information_V1.mp4'
         };
 
         // Language modal elements
